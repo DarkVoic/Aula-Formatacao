@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <script src="/Script/script.js"></script>
+    <title>Componentes</title>
+</head>
+<body>
+    <header class="headerBar dark">
+        <div class="appName">Aplicativo</div>
+        <div class="badge warning">3</div>
+    </header>
+    <nav class="navBar bottom">
+        <div class="buttonGroup">
+            <button id="tab1" class="button active">Texto</button>
+            <button id="tab2" class="button">Botões</button>
+            <button id="tab3" class="button">Formulário</button>
+            <button id="tab4" class="button">Lista</button>
+            
+        </div>
+    </nav>
+    <div id="componente1" class="component">
+        <h1 class="mt1">Texto</h1>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque congue quam ac venenatis. Aenean nec mi id ligula ullamcorper interdum vel vitae nunc. Morbi porta ultrices risus, vel imperdiet libero varius quis. Donec et vehicula nisl. Vivamus rhoncus semper sapien, at cursus leo accumsan id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ex nulla, rhoncus vitae tortor quis, cursus dignissim sem. Cras at commodo nulla. Aenean euismod neque id lectus lobortis luctus. Maecenas pulvinar feugiat pulvinar. Integer auctor justo in urna fermentum, nec pellentesque tortor viverra. Integer luctus augue massa, et accumsan velit tempor eu. Fusce suscipit aliquet fringilla. Fusce rutrum nulla quis tincidunt finibus. Quisque hendrerit nulla id sapien gravida vulputate.</P>
+        <p>Aenean dictum mauris dui. Aenean finibus auctor neque, et tempor metus dictum at. Donec at consectetur nisl, suscipit porttitor velit. Ut ut massa quis lectus fermentum pellentesque. Donec eget varius metus, ut aliquam mi. Curabitur egestas tortor egestas nibh venenatis vulputate. Pellentesque rutrum ornare hendrerit. Donec quis risus a diam laoreet dictum. Pellentesque fermentum tempor orci. Proin mauris odio, placerat ut lacinia vulputate, sagittis vel eros. Suspendisse ac hendrerit ex. Pellentesque sit amet nisl ex. Proin dignissim lacus pellentesque maximus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur mattis posuere neque ut iaculis.</p>
+        <p>Phasellus in ornare turpis. Suspendisse leo justo, efficitur in fermentum id, scelerisque a massa. Phasellus velit lacus, efficitur id dolor tristique, condimentum feugiat turpis. Duis porttitor, libero fermentum dictum maximus, neque turpis blandit sem, non imperdiet ipsum velit id augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam scelerisque justo quam, in egestas ipsum rutrum a. Donec imperdiet vehicula mauris, id faucibus sem feugiat non. Sed non interdum arcu. Aliquam auctor ut tellus nec suscipit. Nullam semper, ipsum eu placerat tempor, augue lorem tempus leo, vitae sagittis mi neque in tortor. In efficitur nec augue et tincidunt.</p>
+        <p>efficitur faucibus sagittis. Phasellus finibus id risus quis sollicitudin. Mauris id posuere turpis. Ut tempus imperdiet nibh, eget blandit ante auctor vitae. Praesent posuere eget ex at interdum. Proin nec hendrerit dui. Proin neque sapien, mollis vitae nunc non, posuere placerat dui. Vivamus lobortis semper felis, vel molestie est pretium nec. Praesent a justo id enim iaculis commodo. Sed eget consequat augue. Praesent vel commodo diam. Morbi quis tellus ante. In hac habitasse platea dictumst. Proin sit amet massa sit amet sem blandit hendrerit eget sit amet purus.</p>            <p>Nunc et purus non massa interdum vulputate in quis urna. Vestibulum at pretium ligula. Maecenas quis urna hendrerit, iaculis dolor vel, ornare tortor. Mauris vitae pulvinar massa. Curabitur at dolor est. Vestibulum nec orci efficitur, tincidunt orci id, ultrices lacus. Sed lacinia ante id sodales ultrices. Etiam volutpat justo eget eros vestibulum, at condimentum quam venenatis. Sed ac quam magna. Curabitur malesuada, eros eu interdum mollis, elit magna ultrices nunc, at ultrices enim lacus quis eros. Proin pulvinar lobortis lectus, a venenatis lorem elementum non. Nunc finibus, justo vitae pellentesque maximus, justo urna luctus nunc, nec faucibus ipsum est at arcu. Quisque ac risus vitae diam interdum lacinia eu et dolor.</P>
+    </div>
+    <div id="componente2" class="component hidden">
+        <h1>Botões</h1>
+        <div class="buttonGroup mt2 end">
+            <button class="button primary ">primary</button>
+            <button class="button second">secondary</button>
+        </div>
+        <div class="buttonGroup mt2 end">
+            <button class="button success ">success</button>
+            <button class="button warning">warning</button>
+            <button class="button danger">danger</button>
+        </div>
+        <div class="buttonGroup mt2 end">
+            <button class="button light ">light</button>
+            <button class="button dark">dark</button>
+        </div>
+    </div>
+    <div id="componente3" class="component hidden">
+        <h1>Formulário</h1>
+        <form action="">
+            <div class="field mt1">
+                <label class="fifth">Nome</label>
+                <input class="valid" type="text" autocomplete="off"/>
+            </div>
+            <div class="field mt1">
+                <label class="fifth">Sobrenome</label>
+                <input class="valid" type="text" autocomplete="off"/>
+            </div>
+            <div class="field mt1">
+                <label class="fifth">Senha</label>
+                <input class="invalid" type="password"/>
+            </div>
+            <div class="buttonGroup end mt1">
+                <button class="button primary quarter">Ok</button>
+            </div>
+        </form>
+    </div>
+    <div id="componente4" class="component">
+        <h1>Lista</h1>
+        <ul class="list mt1">
+            <li>Item 1</li>
+            <li class="active">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+</body>
+</html>
